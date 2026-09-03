@@ -1,7 +1,495 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join 𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧 𝗕𝗬 𝗩𝗜𝗡𝗜𝗧 – Exclusive VIP channel with premium tips, real deals, and daily rewards. Click to join now!" />
+<meta name="keywords" content="arnold real vip, vip channel, telegram vip, real vip tips, premium channel, join telegram, vip group" />
+<meta property="og:title" content="𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧 𝗕𝗬 𝗩𝗜𝗡𝗜𝗧 – Join the VIP Channel" />
+<meta property="og:description" content="🔥 Don't miss out! Join 𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧 𝗕𝗬 𝗩𝗜𝗡𝗜𝗧 – Get exclusive access to premium content, real tips & special rewards. Limited slots available!" />
+<meta property="og:type" content="website" />
+  <title>𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧 𝗕𝗬 𝗩𝗜𝗡𝗜𝗧</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Root ─── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-dark:       #07080f;
+      --bg-card:       rgba(255, 255, 255, 0.04);
+      --accent-red:    #e03253;
+      --accent-red-2:  #c01e3e;
+      --accent-pink:   #ff4d72;
+      --accent-gold:   #f5c842;
+      --accent-blue:   #4f8ef7;
+      --accent-purple: #9b59f5;
+      --text-primary:  #ffffff;
+      --text-secondary: rgba(255, 255, 255, 0.6);
+      --text-muted:    rgba(255, 255, 255, 0.35);
+      --glow-red:      rgba(224, 50, 83, 0.45);
+      --glow-purple:   rgba(155, 89, 245, 0.3);
+      --radius-btn:    16px;
+      --radius-card:   24px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Outfit', 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ─── Animated Background ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%,   rgba(155, 89, 245, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 35% at 20% 80%,  rgba(224, 50, 83, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 60%,  rgba(79, 142, 247, 0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Floating Orbs ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+      animation: floatOrb 8s ease-in-out infinite alternate;
+    }
+    .orb-1 {
+      width: 320px; height: 320px;
+      background: var(--accent-purple);
+      top: -80px; left: -80px;
+      animation-delay: 0s;
+    }
+    .orb-2 {
+      width: 260px; height: 260px;
+      background: var(--accent-red);
+      bottom: -60px; right: -60px;
+      animation-delay: -3s;
+    }
+    .orb-3 {
+      width: 200px; height: 200px;
+      background: var(--accent-blue);
+      top: 50%; right: -40px;
+      animation-delay: -6s;
+    }
+
+    @keyframes floatOrb {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(20px, 30px) scale(1.08); }
+    }
+
+    /* ─── Particle Stars ─── */
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .star {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      animation: twinkle var(--dur, 3s) ease-in-out infinite alternate;
+      animation-delay: var(--delay, 0s);
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.1; transform: scale(0.6); }
+      to   { opacity: 0.9; transform: scale(1.2); }
+    }
+
+    /* ─── Main Container ─── */
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 32px 20px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* ─── Logo Area ─── */
+    .logo-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      animation: fadeSlideDown 0.7s ease both;
+    }
+
+    .logo-glow {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(155, 89, 245, 0.35) 0%, transparent 70%);
+      pointer-events: none;
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1);    opacity: 0.8; }
+      50%       { transform: scale(1.15); opacity: 1; }
+    }
+
+    .logo-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 0 24px rgba(155, 89, 245, 0.6)) drop-shadow(0 0 48px rgba(79, 142, 247, 0.3));
+      animation: logoFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+
+    /* ─── Brand Text ─── */
+    .brand {
+      text-align: center;
+      margin-bottom: 36px;
+      animation: fadeSlideUp 0.8s 0.2s ease both;
+    }
+
+    .brand-title {
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ffffff 0%, #d8bfff 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      margin-bottom: 8px;
+    }
+
+    .brand-tagline {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── Divider ─── */
+    .divider {
+      width: 60px;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-red), var(--accent-blue));
+      margin: 0 auto 36px;
+      animation: fadeSlideUp 0.8s 0.3s ease both;
+    }
+
+    /* ─── Buttons ─── */
+    .buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      animation: fadeSlideUp 0.9s 0.4s ease both;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 18px 24px;
+      border: none;
+      border-radius: var(--radius-btn);
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+      position: relative;
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+      border-radius: var(--radius-btn);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover::before { opacity: 1; }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    /* Primary Button (Login) */
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-red) 0%, #b0203a 100%);
+      color: #ffffff;
+      box-shadow:
+        0 4px 20px var(--glow-red),
+        0 1px 0 rgba(255,255,255,0.15) inset;
+    }
+
+    .btn-primary:hover {
+      box-shadow:
+        0 8px 32px rgba(224, 50, 83, 0.65),
+        0 1px 0 rgba(255,255,255,0.2) inset;
+      filter: brightness(1.1);
+    }
+
+    /* Secondary Button (Gift Code) */
+    .btn-secondary {
+      background: linear-gradient(135deg, rgba(79, 142, 247, 0.18) 0%, rgba(155, 89, 245, 0.18) 100%);
+      color: #ffffff;
+      border: 1.5px solid rgba(155, 89, 245, 0.5);
+      box-shadow:
+        0 4px 20px rgba(155, 89, 245, 0.2),
+        0 1px 0 rgba(255,255,255,0.08) inset;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-secondary:hover {
+      box-shadow:
+        0 8px 32px rgba(155, 89, 245, 0.45),
+        0 1px 0 rgba(255,255,255,0.12) inset;
+      border-color: rgba(155, 89, 245, 0.8);
+      filter: brightness(1.15);
+    }
+
+    /* Tertiary Button (Register) */
+    .btn-tertiary {
+      background: linear-gradient(135deg, rgba(245, 200, 66, 0.12) 0%, rgba(255, 140, 0, 0.12) 100%);
+      color: var(--accent-gold);
+      border: 1.5px solid rgba(245, 200, 66, 0.4);
+      box-shadow:
+        0 4px 20px rgba(245, 200, 66, 0.15),
+        0 1px 0 rgba(255,255,255,0.05) inset;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-tertiary:hover {
+      box-shadow:
+        0 8px 32px rgba(245, 200, 66, 0.35),
+        0 1px 0 rgba(255,255,255,0.10) inset;
+      border-color: rgba(245, 200, 66, 0.7);
+      filter: brightness(1.15);
+    }
+
+    /* Button Icon */
+    .btn-icon {
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .timer-card {
+      width: 100%;
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: var(--radius-card);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(155, 89, 245, 0.12) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.18),
+        0 1px 0 rgba(255, 255, 255, 0.08) inset;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      animation: fadeSlideUp 1s 0.5s ease both;
+    }
+
+    .timer-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+
+    .timer-display {
+      display: block;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0.08em;
+      color: #ffffff;
+      text-shadow: 0 0 18px rgba(224, 50, 83, 0.3);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timer-note {
+      margin-top: 8px;
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.03em;
+    }
+
+    .timer-card.expired .timer-display {
+      color: var(--accent-pink);
+    }
+
+    /* ─── Stats Row ─── */
+    .stats {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 40px;
+      animation: fadeSlideUp 1s 0.6s ease both;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.4rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .stat-sep {
+      width: 1px;
+      background: rgba(255,255,255,0.1);
+      align-self: stretch;
+      margin: 4px 0;
+    }
+
+    /* ─── Footer ─── */
+    .footer {
+      margin-top: 44px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      text-align: center;
+      animation: fadeSlideUp 1s 0.8s ease both;
+    }
+
+    .footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer a:hover {
+      color: var(--accent-pink);
+    }
+
+    /* ─── Live Badge ─── */
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(224, 50, 83, 0.15);
+      border: 1px solid rgba(224, 50, 83, 0.4);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-pink);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      animation: fadeSlideDown 0.6s ease both;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      animation: blink 1.2s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.3; transform: scale(0.75); }
+    }
+
+    /* ─── Keyframe Animations ─── */
+    @keyframes fadeSlideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 480px) {
+      .brand-title { font-size: 2rem; }
+      .logo-img    { width: 150px; height: 150px; }
+      .btn         { padding: 16px 20px; font-size: 0.95rem; }
+      .timer-display { font-size: 1.7rem; }
+      .stats       { gap: 16px; }
+      .stat-value  { font-size: 1.2rem; }
+    }
+  </style>
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,169 +499,197 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4761475484082144');
+fbq('init', '1589589826130311');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4761475484082144&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1589589826130311&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <!-- ZOOM DISABLE META TAG -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>𝗔𝗡𝗨𝗥𝗔𝗚 𝗔𝗥𝗠𝗬</title>
-    
-    <!-- THEME STYLES & FONTS -->
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-        :root{
-          --void:#05060f;--void2:#0a0b1c;--panel:#0d0f24;
-          --monarch:#7c3aed;--monarch2:#a855f7;--arcane:#3b82f6;--arcane2:#38bdf8;
-          --spectral:#e8e6ff;--muted:#9aa0d4;
-        }
-        body{font-family:'Rajdhani',-apple-system,sans-serif;background:var(--void);color:var(--spectral);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;position:relative;overflow:hidden}
-        
-        /* Ambient aura bleeding from top + corners */
-        body::before{content:'';position:fixed;inset:0;background:
-          radial-gradient(ellipse 65% 42% at 50% 8%,rgba(124,58,237,0.34) 0%,transparent 60%),
-          radial-gradient(circle 48% at 8% 92%,rgba(59,130,246,0.24) 0%,transparent 58%),
-          radial-gradient(circle 46% at 92% 82%,rgba(168,85,247,0.20) 0%,transparent 55%);
-          pointer-events:none;z-index:0}
-          
-        /* Faint drifting energy motes */
-        body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
-          background-image:radial-gradient(1.5px 1.5px at 20% 30%,rgba(168,85,247,.7),transparent),radial-gradient(1.5px 1.5px at 70% 20%,rgba(56,189,248,.6),transparent),radial-gradient(1.5px 1.5px at 40% 75%,rgba(124,58,237,.6),transparent),radial-gradient(1.5px 1.5px at 85% 65%,rgba(56,189,248,.5),transparent),radial-gradient(1.5px 1.5px at 15% 60%,rgba(168,85,247,.5),transparent);
-          animation:drift 9s ease-in-out infinite alternate}
-        @keyframes drift{from{transform:translateY(0)}to{transform:translateY(-14px)}}
-        
-        /* CARD STYLING - margin-bottom add kiya hai card ko upar karne ke liye */
-        .card{position:relative;width:100%;max-width:412px;margin-bottom:8vh;background:linear-gradient(168deg,var(--panel) 0%,var(--void2) 60%,#0b0817 100%);border:1px solid rgba(124,58,237,0.32);border-radius:22px;padding:34px 24px 28px;z-index:2;
-          box-shadow:0 24px 70px rgba(80,20,180,0.28),0 4px 22px rgba(0,0,0,0.6),inset 0 1px 0 rgba(180,150,255,0.10);
-          animation:rise 0.6s cubic-bezier(0.16,1,0.3,1) both}
-        @keyframes rise{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:none}}
-        
-        /* Thin arcane top edge */
-        .card::before{content:'';position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--monarch2),var(--arcane2),transparent);opacity:.8}
-        
-        .crest{text-align:center;font-family:'Orbitron',sans-serif;font-size:10px;font-weight:600;letter-spacing:5px;color:var(--arcane2);text-transform:uppercase;margin-bottom:20px;opacity:.85}
-        
-        /* LOGO & AURA ANIMATIONS */
-        .avatar-wrap{position:relative;width:130px;height:130px;margin:0 auto 22px}
-        
-        .aura{position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,var(--monarch),var(--arcane),var(--monarch2),var(--arcane2),var(--monarch));filter:blur(9px);opacity:.75;animation:spin 4.5s linear infinite}
-        @keyframes spin{to{transform:rotate(360deg)}}
-        
-        .aura2{position:absolute;inset:-5px;border-radius:50%;background:linear-gradient(135deg,var(--monarch2),var(--arcane) 55%,var(--monarch));animation:pulse 2.8s ease-in-out infinite}
-        @keyframes pulse{0%,100%{box-shadow:0 0 24px rgba(124,58,237,0.55),0 0 46px rgba(59,130,246,0.30)}50%{box-shadow:0 0 40px rgba(168,85,247,0.85),0 0 70px rgba(56,189,248,0.45)}}
-        
-        /* Avatar Image */
-        .avatar{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;background-size:cover;background-position:center;border:3px solid #0b0817;z-index:2}
-        
-        /* TYPOGRAPHY */
-        h1{font-family:'Orbitron',sans-serif;font-size:32px;font-weight:900;letter-spacing:1px;line-height:1.2;text-align:center;margin-bottom:6px;
-          background:linear-gradient(180deg,#ffffff 0%,#cbb8ff 48%,var(--monarch2) 130%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-          filter:drop-shadow(0 0 14px rgba(124,58,237,0.45))}
-          
-        .divider{width:60px;height:2px;margin:12px auto 14px;background:linear-gradient(90deg,transparent,var(--monarch2),var(--arcane2),transparent);border-radius:2px}
-        
-        .tagline{font-size:16px;font-weight:700;color:var(--muted);text-align:center;letter-spacing:.6px;margin-bottom:24px; text-transform: uppercase;}
-        
-        /* BUTTON STYLING - ctaShake animation add kiya hai */
-        .cta{display:block;width:100%;position:relative;background:linear-gradient(135deg,var(--monarch) 0%,#6d28d9 45%,var(--arcane) 100%);color:#fff;padding:20px 16px;border-radius:14px;text-decoration:none;font-family:'Orbitron',sans-serif;font-weight:800;font-size:16px;letter-spacing:2px;text-transform:uppercase;text-align:center;border:1px solid rgba(180,150,255,0.4);cursor:pointer;overflow:hidden;
-          box-shadow:0 14px 34px rgba(90,30,200,0.45),inset 0 1px 0 rgba(255,255,255,0.28);animation:ctaPulse 2.6s ease-in-out infinite, ctaShake 4s infinite}
-        @keyframes ctaPulse{0%,100%{box-shadow:0 14px 34px rgba(90,30,200,0.45),inset 0 1px 0 rgba(255,255,255,0.28)}50%{box-shadow:0 16px 46px rgba(124,58,237,0.68),0 0 30px rgba(56,189,248,0.35),inset 0 1px 0 rgba(255,255,255,0.34)}}
-        
-        /* NEW: Button Shake Keyframes */
-        @keyframes ctaShake {
-            0%, 80%, 100% { transform: translateX(0); }
-            82%, 86%, 90%, 94% { transform: translateX(-5px); }
-            84%, 88%, 92%, 96% { transform: translateX(5px); }
-        }
 
-        .cta::before{content:'';position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.42),transparent);animation:sweep 3s ease-in-out infinite}
-        @keyframes sweep{0%{left:-80%}55%,100%{left:130%}}
-        .cta:active{transform:scale(.97)}
-        .cta-arrow{margin-left:6px}
-        
-        .hint{margin-top:16px;font-size:12px;color:var(--muted);text-align:center;letter-spacing:.4px;opacity:.75}
-        
-        /* 30 SEC TIMER STYLING */
-        .timer-box {
-            margin-top: 25px;
-            color: var(--arcane2);
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-align: center;
-            animation: textBlink 1.5s infinite alternate;
-        }
-        
-        .timer-box span {
-            font-size: 20px;
-            font-weight: 800;
-            color: var(--monarch2);
-        }
-
-        @keyframes textBlink {
-            from { opacity: 0.6; }
-            to { opacity: 1; }
-        }
-
-        @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-    </style>
-    
-    <!-- Base64 Active Font -->
-    <style>
-        @font-face{font-family:'Rajdhani';font-style:normal;font-weight:700;font-display:swap;src:url(data:font/woff2;base64,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) format('woff2')}
-    </style>
 </head>
-
 <body>
-    <div class="card">
-        <!-- Old tag text in new theme style -->
-        <div class="crest">◆ ARISE ◆</div>
-        
-        <!-- Animated border setup from new theme -->
-        <div class="avatar-wrap">
-            <div class="aura"></div>
-            <div class="aura2"></div>
-            <!-- Old Image Link placed securely -->
-            <div class="avatar" style="background-image:url('https://i.ibb.co/YBNPPXPp/file-00000000622882089931f282791629a7.png');"></div>
-        </div>
-        
-        <!-- Old texts exactly copied -->
-        <h1>𝗔𝗡𝗨𝗥𝗔𝗚 𝗔𝗥𝗠𝗬</h1>
-        <div class="divider"></div>
-        <div class="tagline">1/2 LEVEL COMMUNITY</div>
-        
-        <!-- Old Telegram button logic and link, new theme animation -->
-        <a class="cta"https://telegram.me/+Maan5KcbMX00NmRl" id="joinBtn">JOIN TELEGRAM<span class="cta-arrow">➤</span></a> 
-        
-        <!-- 30 SECONDS TIMER FROM OLD CODE -->
-        <div class="timer-box">
-            Redirecting in <span id="countdown">5</span> seconds...
-        </div>
 
-        <div class="hint">Tap to open Telegram and send your request.</div>
+  <!-- Ambient Background Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Twinkling Star Particles (generated by JS) -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Main Content -->
+  <main class="container" role="main">
+
+    <!-- Live Badge -->
+    <div class="live-badge" aria-label="Live site">
+      <span class="live-dot"></span>
+      Live Now
     </div>
 
-    <!-- JAVASCRIPT: 5-sec Auto Redirect -->
-    <script>
-        let timeLeft = 1200; 
-        const countdownDisplay = document.getElementById('countdown');
-        const telegramLink = "https://telegram.me/+Maan5KcbMX00NmRl";
+    <!-- Logo -->
+    <div class="logo-wrapper" aria-hidden="true">
+      <div class="logo-glow"></div>
+      <img
+        class="logo-img"
+        src="WhatsApp Image 2026-08-02 at 6.39.28 PM (1).jpeg"
+        alt="arnold Logo"
+        id="site-logo"
+        loading="eager"
+      />
+    </div>
 
-        const timer = setInterval(function() {
-            timeLeft--;
-            countdownDisplay.textContent = timeLeft;
+    <!-- Brand Name -->
+    <div class="brand">
+      <h1 class="brand-title">𝗦𝗨𝗥𝗘𝗦𝗛𝗢𝗧 𝗕𝗬 𝗩𝗜𝗡𝗜𝗧</h1>
+      <p class="brand-tagline">Your Premium Gaming Destination 🎰</p>
+    </div>
 
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                countdownDisplay.parentElement.innerHTML = "Redirecting now..."; 
-                window.location.href = telegramLink; 
-            }
-        }, 1000);
-    </script>
+    <!-- Gradient Divider -->
+    <div class="divider" role="presentation"></div>
+
+    <!-- CTA Buttons -->
+    <nav class="buttons" aria-label="Main actions">
+
+
+      <a
+        id="btn-gift"
+        href="https://t.me/+dOgLZ2QJv242ODM1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+        aria-label="Arnold Gift Code"
+      >
+        <span class="btn-icon">JOIN NOW </span>
+      </a>
+
+    </nav>
+
+    <section class="timer-card" id="free-join-timer" aria-live="polite" aria-label="Free join countdown">
+      <span class="timer-label">Time Left For Free Join</span>
+      <span class="timer-display" id="timer-display">00:00</span>
+      <p class="timer-note" id="timer-note">Offer starts counting down as soon as you open the page.</p>
+    </section>
+
+    <!-- Stats Row -->
+    <div class="stats" aria-label="Platform statistics">
+      <div class="stat-item">
+        <span class="stat-value">50K+</span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">24/7</span>
+        <span class="stat-label">Support</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Secure</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025  All rights reserved.</p>
+      <p style="margin-top:6px;">
+        <a href="https://t.me/VINITHELPLINE" target="_blank" rel="noopener">Ads Managed By @VINITHELPLINE</a>
+      </p>
+    </footer>
+
+  </main>
+
+  <script>
+    // ── Generate twinkling star particles ──
+    (function () {
+      const container = document.getElementById('stars');
+      const count = 60;
+      for (let i = 0; i < count; i++) {
+        const s = document.createElement('div');
+        s.className = 'star';
+        const size = Math.random() * 2.5 + 0.8;
+        s.style.cssText = `
+          width: ${size}px;
+          height: ${size}px;
+          top: ${Math.random() * 100}%;
+          left: ${Math.random() * 100}%;
+          --dur: ${(Math.random() * 3 + 2).toFixed(1)}s;
+          --delay: ${(Math.random() * 4).toFixed(1)}s;
+        `;
+        container.appendChild(s);
+      }
+    })();
+
+// Free join countdown timer
+(function () {
+  const timerCard = document.getElementById('free-join-timer');
+  const timerDisplay = document.getElementById('timer-display');
+  const timerNote = document.getElementById('timer-note');
+
+  if (!timerCard || !timerDisplay || !timerNote) {
+    return;
+  }
+
+  let timeLeft = 20;
+
+  function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+  }
+
+  function renderTimer() {
+    timerDisplay.textContent = formatTime(timeLeft);
+  }
+
+  renderTimer();
+
+  const countdown = setInterval(() => {
+    timeLeft -= 1;
+
+    if (timeLeft <= 0) {
+      timeLeft = 0;
+      renderTimer();
+      timerCard.classList.add('expired');
+      timerNote.textContent = 'Free join time is over. Register now before the next reset.';
+      clearInterval(countdown);
+      return;
+    }
+
+    renderTimer();
+  }, 1000);
+})();
+
+    // Button ripple effect
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        const rect = btn.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.cssText = `
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.25);
+          width: ${size}px;
+          height: ${size}px;
+          left: ${e.clientX - rect.left - size / 2}px;
+          top: ${e.clientY - rect.top - size / 2}px;
+          transform: scale(0);
+          animation: rippleAnim 0.5s ease-out forwards;
+          pointer-events: none;
+        `;
+        btn.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+      });
+    });
+  </script>
+
+  <style>
+    @keyframes rippleAnim {
+      to { transform: scale(2.5); opacity: 0; }
+    }
+  </style>
+
 
 </body>
 </html>
